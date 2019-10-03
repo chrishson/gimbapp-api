@@ -38,9 +38,8 @@ const app = express();
 // App Middleware
 const whitelist = [
     'http://localhost:3001',
+    'http://gimbapp-client.herokuapp.com',
     'https://gimbapp-client.herokuapp.com',
-    'http://gimbapp.com',
-    'https://gimbapp.com',
     'http://www.gimbapp.com',
     'https://www.gimbapp.com',
     ];
