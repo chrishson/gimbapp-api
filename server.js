@@ -36,7 +36,13 @@ const main = require('./controllers/main');
 const app = express();
 
 // App Middleware
-const whitelist = ['http://localhost:3001', 'https://gimbapp-client.herokuapp.com'];
+const whitelist = [
+    'http://localhost:3001',
+    'http://gimbapp-client.herokuapp.com',
+    'https://gimbapp-client.herokuapp.com',
+    'http://www.gimbapp.com',
+    'https://www.gimbapp.com',
+    ];
 const corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1 || !origin) {
