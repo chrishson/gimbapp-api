@@ -10,6 +10,8 @@ const cors = require('cors');  // allows/disallows cross-site communication
 const morgan = require('morgan'); // logs requests
 
 // db Connection w/ Heroku
+
+// TO DO: Move away from knex and write straight up sql
  const db = require('knex')({
    client: 'pg',
    connection: {
