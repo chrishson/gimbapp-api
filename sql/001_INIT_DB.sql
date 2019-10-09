@@ -7,13 +7,13 @@ CREATE TABLE vocab(
 
 CREATE TABLE lessons(
    id serial PRIMARY KEY,
-   lesson_name varchar(50) NOT NULL,
+   lesson_name varchar(255) NOT NULL,
    user_id varchar(32) NOT NULL
 );
 
 CREATE TABLE users(
    id serial PRIMARY KEY,
    username varchar(50) NOT NULL,
-   email varchar(100) NOT NULL,
-   password varchar(100) NOT NULL
+   email varchar(255) NOT NULL,
+   password varchar(60) NOT NULL
 );
